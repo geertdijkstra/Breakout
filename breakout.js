@@ -50,7 +50,6 @@ function init() {
 
   canvas = document.getElementById('breakout');
   canvasCtx = canvas.getContext('2d');
-  start = document.getElementById('start');
 
   paddleX = (canvas.width - paddleWidth) / 2;
 
@@ -75,27 +74,22 @@ function init() {
 }
 
 function update(){
+  
+    drawField();
+    drawBricks();
+    drawPaddle();
+    drawScore();
+    drawLives();
 
   // Playing loop
   if (isPlaying) {
 
-    drawField();
-    drawBricks();
     drawBall();
-    drawPaddle();
-    drawScore();
-    drawLives();
     collisionWithBricks();
   }
 
   // Not playing loop
   else {
-
-    drawField();
-    drawBricks();
-    drawPaddle();
-    drawScore();
-    drawLives();
 
     if (gameOver) {
 
