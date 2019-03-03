@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------
 // Project: Breakout
 // Coder: Geert Dijkstra
-// Last update: 02 March 2019
+// Last update: 03 March 2019
 // Description: Breakout remake using Javascript & HTML5 Canvas
 //---------------------------------------------------------------------
 
